@@ -8,12 +8,12 @@ export class UserSetting {
     @Field((type)=>Int)
     userId:number
 
-    @Column()
-    @Field({defaultValue:false, nullable:false})
+    @Column({default:false})
+    @Field({defaultValue:false, nullable:true})
     receiveNotifications:boolean
 
 
-    @Column()
-    @Field({defaultValue:false, nullable:false})
+    @Column({default:false})
+    @Field({defaultValue:false, nullable:true})
     receiveEmails:boolean
 }

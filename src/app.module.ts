@@ -17,7 +17,7 @@ import { UsersModule } from './users/users.module';
     type: 'sqlite',
     database: 'database.sqlite',
     synchronize: true,
-    logging: false,
+    logging: true,
     entities: [User,UserSetting],
     migrations: [],
     subscribers: [],
@@ -25,7 +25,7 @@ import { UsersModule } from './users/users.module';
   UsersModule,
 ],
   controllers: [],
-  providers: [UserResolver,UserSettingResolver],
+  providers: [],
 })
 export class AppModule {}
 

@@ -4,8 +4,8 @@
 
 type UserSetting {
   userId: Int!
-  receiveNotifications: Boolean!
-  receiveEmails: Boolean!
+  receiveNotifications: Boolean
+  receiveEmails: Boolean
 }
 
 type User {

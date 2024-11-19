@@ -8,5 +8,5 @@ export class CreateUserInput {
     username:string
 
     @Field({nullable:true})
-    displayName:string
+    displayName?:string
 }
